@@ -1,0 +1,86 @@
+/* ====================================================
+                      CSS RESETS
+=======================================================*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+/* ====================================================
+                      CSS STYLING
+=======================================================*/
+
+.main{
+    height: 100vh;
+}
+
+.wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+
+.text-container{
+    width: 70%;
+    padding: 1rem 2rem;
+    border: 2px solid wheat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.btn{
+    border: none;
+    color: white;
+    padding: 0.5rem 0.6rem;
+    cursor: pointer;
+    border-radius: 5rem;
+    background-color: rgb(61, 61, 61);
+    transition: all 0.3s ease-in;
+}
+
+.btn:hover{
+    scale: 1.1;
+    color: rgb(56, 70, 82);
+    background-color: rgb(131, 131, 131);
+}
