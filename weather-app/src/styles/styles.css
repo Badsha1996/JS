@@ -1,0 +1,119 @@
+/* ====================================================
+                      CSS RESETS
+=======================================================*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: #f0f8ff;
+}
+
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+/* ====================================================
+                      CSS STYLING
+=======================================================*/
+.wrapper{
+  width: 90%;
+  max-width: 38rem;
+  min-width: 22rem;
+  text-align: center;
+  padding: 2em 1.5em;
+  margin: 2em auto;
+  background: linear-gradient(130deg, #5120DF, #846ad4);
+}
+.search-card{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-box{
+  border: 0;
+  outline: 0;
+  background: #f4f1ff;
+  border-radius: 2rem;
+  padding: 0.5em 1em;
+}
+.search-card button{
+  background: transparent;
+  border: 0; 
+  height: 2.2rem;
+  cursor: pointer;
+  transition: scale 0.3s ease-in;
+}
+.search-card button:hover{
+  scale: 1.09;
+}
+.search-card button .search-icon{
+  height: 100%;
+}
+.info-card{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.temp{
+  color: #f5deb3;
+  width: 80%;
+  border-radius: 2rem;
+  --s: 200px; 
+  --c1: #1d1d1d;
+  --c2: #4e4f51;
+  --c3: #3c3c3c;
+  
+  background:
+    repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 180deg) 
+     calc(.5*var(--s)) calc(.5*var(--s)*0.577),
+    repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 180deg);
+  background-size: var(--s) calc(var(--s)*0.577);
+}
+.city{
+  color: #f0ffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
