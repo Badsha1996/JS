@@ -33,7 +33,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  background-color: #f0f8ff;
+  background-color: #e6d754;
 }
 
 
@@ -47,6 +47,7 @@ picture {
                       CSS STYLING
 =======================================================*/
 .wrapper{
+  position: relative;
   width: 90%;
   max-width: 38rem;
   min-width: 22rem;
@@ -54,32 +55,71 @@ picture {
   padding: 2em 1.5em;
   margin: 2em auto;
   background: linear-gradient(130deg, #5120DF, #846ad4);
+  z-index: 0;
+  box-shadow: 2px 2px 5px rgb(118, 71, 247);
+}
+
+.style-background{
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  top: 0;
+  right: 5px;
+  z-index: -1;
+  --s: 84px; 
+  --c1: #846ad4;
+  --c2: #846ad4;
+  --c3:  #5b30df;
+  
+  --_g: 0 120deg,#0000 0;
+  background:
+    conic-gradient(from    0deg at calc(500%/6) calc(100%/3),var(--c3) var(--_g)),
+    conic-gradient(from -120deg at calc(100%/6) calc(100%/3),var(--c2) var(--_g)),
+    conic-gradient(from  120deg at calc(100%/3) calc(500%/6),var(--c1) var(--_g)),
+    conic-gradient(from  120deg at calc(200%/3) calc(500%/6),var(--c1) var(--_g)),
+    conic-gradient(from -180deg at calc(100%/3) 50%,var(--c2)  60deg,var(--c1) var(--_g)),
+    conic-gradient(from   60deg at calc(200%/3) 50%,var(--c1)  60deg,var(--c3) var(--_g)),
+    conic-gradient(from  -60deg at 50% calc(100%/3),var(--c1) 120deg,var(--c2) 0 240deg,var(--c3) 0);
+  background-size: calc(var(--s)*1.732) var(--s);
 }
 .search-card{
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 .search-box{
   border: 0;
   outline: 0;
-  background: #f4f1ff;
+  background: transparent;
   border-radius: 2rem;
   padding: 0.5em 1em;
+  color: wheat;
+  font-size: medium;
+  border-bottom: 2px solid wheat;
+  border-top: 1px solid wheat;
+  width: 100%;
+}
+.search-box::placeholder{
+  color: wheat;
 }
 .search-card button{
   background: transparent;
   border: 0; 
-  height: 2.2rem;
+  height: 3.1rem;
   cursor: pointer;
-  transition: scale 0.3s ease-in;
+  outline: #DF5120;
+  transition: all 0.2s ease-in-out;
 }
 .search-card button:hover{
-  scale: 1.09;
+  outline: 3px solid white;
+  outline-offset: -5px;
+  border-radius: 50%;
+  rotate: 45deg;
 }
 .search-card button .search-icon{
-  height: 100%;
+  height: 90%;
 }
 .info-card{ 
   display: flex;
@@ -105,7 +145,19 @@ picture {
 .city{
   color: #f0ffff;
 }
-
+.details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+p{
+  color: #20DF51;
+  font-weight: 600;
+}
+.value{
+  color: wheat;
+}
 
 
 
