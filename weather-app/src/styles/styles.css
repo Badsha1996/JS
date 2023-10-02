@@ -107,10 +107,12 @@ picture {
 .search-card button{
   background: transparent;
   border: 0; 
-  height: 3.1rem;
+  height: 2.8rem;
   cursor: pointer;
-  outline: #DF5120;
-  transition: all 0.2s ease-in-out;
+  outline:#DF5120;
+  border-radius: 50%;
+  outline-offset:-1px;
+  transition: all 0.3s ease-in-out;
 }
 .search-card button:hover{
   outline: 3px solid white;
