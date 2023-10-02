@@ -34,6 +34,8 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-color: #e6d754;
+  background: url('../assets/wallpaper.jpg') no-repeat;
+  background-size: cover;
 }
 
 
@@ -46,6 +48,7 @@ picture {
 /* ====================================================
                       CSS STYLING
 =======================================================*/
+
 .wrapper{
   position: relative;
   width: 90%;
@@ -54,9 +57,10 @@ picture {
   text-align: center;
   padding: 2em 1.5em;
   margin: 2em auto;
-  background: linear-gradient(130deg, #5120DF, #846ad4);
+  background: linear-gradient(130deg, #5020df8c, #846ad4);
   z-index: 0;
-  box-shadow: 2px 2px 5px rgb(118, 71, 247);
+  box-shadow: 2px 2px 8px rgb(118, 71, 247);
+  border-radius: 1rem;
 }
 
 .style-background{
@@ -64,8 +68,9 @@ picture {
   height: 100%;
   width: 20%;
   top: 0;
-  right: 5px;
+  right: 0;
   z-index: -1;
+  border-radius: 1rem;
   --s: 84px; 
   --c1: #846ad4;
   --c2: #846ad4;
