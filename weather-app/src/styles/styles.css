@@ -62,7 +62,18 @@ picture {
   box-shadow: 2px 2px 8px rgb(118, 71, 247);
   border-radius: 1rem;
 }
-
+.weather-icon{
+  position: relative;
+  height: 12rem;
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weather-icon > *{
+  position: absolute;
+  display: none;
+}
 .style-background{
   position: absolute;
   height: 100%;
@@ -122,14 +133,13 @@ picture {
 .search-card button:hover{
   outline: 3px solid white;
   outline-offset: -5px;
-  border-radius: 50%;
   rotate: 45deg;
 }
 .search-card button .search-icon{
   height: 90%;
 }
 .info-card{ 
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
